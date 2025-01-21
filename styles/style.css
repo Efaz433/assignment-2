@@ -111,7 +111,7 @@
 /*main section*/
 .section-1{
     border-bottom: 3px dotted rgb(128, 128, 128);
-    background-image: url(../assets/images\ \(1\).png);
+    background-image: url(../assets/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1440px;
@@ -168,8 +168,38 @@
 .a-purpuil{
     color: rgb(135, 0, 255);
 }
+/*section-2*/
 
+/*footer section */
+
+
+.footer-cont{
+
+    background-color:darkgray;
+    padding: 100px 250px 100px 100px;
+    gap: 40px;
+    justify-content: space-evenly;
+    justify-content: center;
+    color: white;
+    
+}
+.div-1{
+    
+    align-items: center;
+}
+.footer-item{
+    list-style: none;
+}
+
+.footer-anchor{
+     text-decoration: none;
+    color: white;
+}
     @media screen and ( max-width:576px ) {
+        .margin-forgotten{
+            margin-top: 30px;
+            border-top: 2px solid orange;
+        }
         .nav-heading, .nav-item, .nav-btn{
             display: none;
         }
@@ -190,6 +220,10 @@
         }
         .width{
             width: 400px;
+        }
+        .footer-cont{
+            flex-direction: column;
+            padding: 25px;
         }
        
         
