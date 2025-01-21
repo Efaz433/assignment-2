@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+.quicksand-regular-1{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+.raleway-regular-2 {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+/*Common Style*/
+.display-flex{
+    display: flex;
+}
+
+/*Banner Section*/
+/*navbar*/
+.navbar{
+    justify-content: space-evenly;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 32px;
+}
+.nav-anchor{
+    text-decoration: none;
+}
+.anchor-1{
+    font-weight: 700;
+    color: rgb(254, 163, 1);
+}
+.anchor-2{
+    font-weight: 500;
+    color: rgb(1, 172, 253);
+}
+.anchor-3{
+    font-weight: 500;
+    color: rgb(5, 212, 223);
+}
+.anchor-4{
+    font-weight: 500;
+    color: rgb(93, 88, 239);
+}
+.nav-btn{
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(254, 163, 1);
+    max-width: 197px;
+    max-height: 50px;
+    padding: 5px 30px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+.nav-btn:hover{
+    background-color: rgb(93, 88, 239);
+
+}
+.mob-menu{
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+@media screen and (max-width: 576px){
+    .nav-heading, .nav-item, .nav-btn{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .mob-menu{
+        display: block;
+    }
+   
+    
+
+    
+    
+}
+
+
+
+
+  
