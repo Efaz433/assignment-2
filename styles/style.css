@@ -168,14 +168,86 @@
 .a-purpuil{
     color: rgb(135, 0, 255);
 }
+.direection-btn{
+    border: none;
+    width: 65px;
+    height: 65px;
+    background-color: orange;
+    border-radius: 50%;
+    color:white;
+}
 /*section-2*/
+.section-2{
+    max-width: 1440px;
+    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%),url(../assets/bg.png);
+}
+.sec-2-title{
+    text-align: center;
+    font-weight: 700;
+}
+.sec-2-card-cont{
+    
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.sec-2-card-1{
+    border-radius: 8px;
+    grid-row: span 2;
+    background-color: white;
+}
+.sec-2-card-2, .sec-2-card-3, .sec-2-card-4, .sec-2-card-5{
+    border-radius: 8px;
+    background-color: white;
+    font-weight: 700; 
+}
+.text{
+    padding: 20px;
+}
+.sec-2-btn-1{
+    position: relative;
+    bottom: 20px;
+    border: none;
+    border-radius: 47.93px;
+    background-color: rgb(60, 216, 232);
+    padding: 10px 15px;
+    margin-left: 60px;
+        
+}
+.sec-2-btn-2{
+    position: relative;
+    bottom: 20px;
+    border: none;
+    border-radius: 47.93px;
+    background-color:rgb(149, 178, 38);
+    padding: 10px 15px;
+    margin-left: 30px;
+        
+}
+.sec-2-btn-3{
+    position: relative;
+    bottom: 20px;
+    border: none;
+    border-radius: 47.93px;
+    background-color: rgb(93, 88, 240);
+    padding: 10px 15px;
+    margin-left:30px;
+        
+}
+.middle{
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 /*footer section */
 
 
 .footer-cont{
 
-    background-color:darkgray;
+    background-color:lightblue;
     padding: 100px 250px 100px 100px;
     gap: 40px;
     justify-content: space-evenly;
@@ -200,7 +272,7 @@
             margin-top: 30px;
             border-top: 2px solid orange;
         }
-        .nav-heading, .nav-item, .nav-btn{
+        .nav-heading, .nav-item, .nav-btn, .direection-btn, .sec-2-card-1{
             display: none;
         }
         .navbar{
@@ -221,11 +293,32 @@
         .width{
             width: 400px;
         }
+        .sec-2-card-cont{
+            grid-template-columns: repeat(2 ,1fr);
+            padding: 20px;
+        }
+
+    
         .footer-cont{
             flex-direction: column;
             padding: 25px;
         }
-       
+        .sec-2-card-2, .sec-2-card-3, .sec-2-card-4, .sec-2-card-5{
+            width: 170px;
+            height: 220px;
+        }
+        .sec-2-img{
+            width: 170px;
+            height: 100px;
+        }
+        .sec-2-btn-2,.sec-2-btn-3, .sec-2-btn-4, .sec-2-btn-5{
+            padding: 5px;
+            margin-left: 10px;
+        }
+        .heading-margin{
+            margin-top: 0;
+            font-size: smaller;
+        }
         
     }
 
