@@ -66,12 +66,17 @@
     height: 50px;
 }
 /*Banner section*/
+.margin-forgotten{
+    border-bottom: 3px dotted rgb(128, 128, 128);
+
+}
 .banner-cont{
     max-width: 60rem;
-    margin: 30px auto;
+    margin: 50px auto;
     justify-content: center;
     align-items: center;
     gap: 25px;
+
 }
 .banner-title{
     font-weight: 800;
@@ -104,31 +109,90 @@
 
 }
 /*main section*/
-
-@media screen and (max-width: 576px){
-    .nav-heading, .nav-item, .nav-btn{
-        display: none;
-    }
-    .navbar{
-        justify-content: space-between;
-    }
-    .mob-menu{
-        display: block;
-    }
-    .banner-cont{
-        flex-direction:column-reverse;
-    }
-    .banner-text{
-        text-align: center;
-    }
-   
-    
-
-    
-    
+.section-1{
+    border-bottom: 3px dotted rgb(128, 128, 128);
+    background-image: url(../assets/images\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 80px auto;
+    text-align: center;
+}
+.card-cont{
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.sec-1-card-1{
+    width: 300px;
+    height: 350px;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    padding: 15px 25px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.sec-1-card-2{
+    width: 300px;
+    height: 350px;
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    padding: 15px 25px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.sec-1-card-3{
+    width: 300px;
+    height: 350px;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    padding: 15px 25px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.card-para{
+    color: rgb(128, 128, 128);
+}
+.section-1 a{
+    text-decoration: none;
+}
+.card-title{
+    font-weight: 700;
+}
+.a-blue{
+    color: rgb(100, 200, 255);
+}
+.a-orange{ 
+    color: rgb(240, 170, 0);
+}
+.a-purpuil{
+    color: rgb(135, 0, 255);
 }
 
-
-
+    @media screen and ( max-width:576px ) {
+        .nav-heading, .nav-item, .nav-btn{
+            display: none;
+        }
+        .navbar{
+            justify-content: space-between;
+        }
+        .mob-menu{
+            display: block;
+        }
+        .banner-cont{
+            flex-direction:column-reverse;
+        }
+        .banner-text{
+            text-align: center;
+        }
+        .card-cont{
+            flex-direction: column;
+        }
+        .width{
+            width: 400px;
+        }
+       
+        
+    }
 
   
