@@ -3,7 +3,6 @@
 .quicksand-regular-1{
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
 }
 .raleway-regular-2 {
@@ -17,7 +16,7 @@
     display: flex;
 }
 
-/*Banner Section*/
+/*header Section*/
 /*navbar*/
 .navbar{
     justify-content: space-evenly;
@@ -55,6 +54,7 @@
     font-weight: 600;
     color: white;
     cursor: pointer;
+    transition: background-color 2s;
 }
 .nav-btn:hover{
     background-color: rgb(93, 88, 239);
@@ -65,6 +65,46 @@
     width: 50px;
     height: 50px;
 }
+/*Banner section*/
+.banner-cont{
+    max-width: 60rem;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.banner-title{
+    font-weight: 800;
+}
+.orange{
+    color: orange;
+}
+.light-blue{
+    color: blue;
+}
+
+.banner-para{
+    font-weight: 400;
+}
+.banner-btn{
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    color: white;
+    transition:background-color 2s ;
+}
+.banner-btn:hover{
+    background-color: orange;
+}
+
+.banner-img{
+    width: 400px;
+    height: 500px;
+
+}
+/*main section*/
+
 @media screen and (max-width: 576px){
     .nav-heading, .nav-item, .nav-btn{
         display: none;
@@ -74,6 +114,12 @@
     }
     .mob-menu{
         display: block;
+    }
+    .banner-cont{
+        flex-direction:column-reverse;
+    }
+    .banner-text{
+        text-align: center;
     }
    
     
