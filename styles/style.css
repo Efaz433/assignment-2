@@ -9,6 +9,107 @@ body {
     color: white;
 }
 
+/* highlighted font */
+.highlighted-font {
+    background: linear-gradient(to bottom, #9100F8 40%, #FB09B4 50%, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* header section */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid azure;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+nav>button {
+    width: 150px;
+    height: 45px;
+    padding: 5px 20px;
+    background: linear-gradient(to right, yellow, #FB09B4 40%, #9100F8);
+    color: white;
+    border-radius: 5px;
+
+}
+
+#banner {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+    background-image: url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.image-container {
+    position: relative;
+}
+
+.circle-image {
+    width: 240px;
+    position: absolute;
+    top: 40px;
+    left: -60px;
+}
+
+.microphone {
+    position: relative;
+    top: 60px;
+    z-index: 10;
+}
+
+.notification {
+    position: absolute;
+    top: 10px;
+    right: -40px;
+    background-color: lightgreen;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-1 {
+    width: 200px;
+    height: 45px;
+    padding: 5px 20px;
+    background: linear-gradient(to right, yellow, #FB09B4 40%, #9100F8);
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-2 {
+    width: 200px;
+    height: 45px;
+    border: 2px solid lightgreen;
+    padding: 5px 20px;
+    background-color: transparent;
+    color: lightgreen;
+    border-radius: 10px;
+}
+
 /* main style */
 /* section -2 */
 #section-2 {
@@ -105,13 +206,6 @@ iframe {
     padding: 10px;
 }
 
-/* highlighted font */
-.highlighted-font {
-    background: linear-gradient(to bottom, #9100F8 40%, #FB09B4 50%, yellow);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 /* style of footer */
 footer {
     height: 400px;
@@ -141,12 +235,37 @@ footer div a {
 }
 
 @media screen and (max-width:576px) {
+
+    nav>ul,
+    nav>button {
+        display: none;
+    }
+
     #section-2 {
         margin: 20px;
     }
 
     .sec-1-card-container {
         display: block;
+    }
+
+    .circle-image {
+        width: 150px;
+        top: 30px;
+        left: -25px;
+    }
+
+    .microphone {
+        width: 70px;
+
+        top: 50px;
+        left: 10px;
+        z-index: 10;
+    }
+
+    .notification {
+        top: 10px;
+        right: -70px;
     }
 
     .sec-1-card {
