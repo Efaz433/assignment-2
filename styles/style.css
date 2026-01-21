@@ -3,6 +3,108 @@
     font-family: "Inter", sans-serif;
 }
 
+body {
+    background-color: #1A0B2E;
+
+    color: white;
+}
+
+/* main style */
+/* section -2 */
+#section-2 {
+    margin: 50px 180px;
+}
+
+#section-2>h1 {
+    text-align: center;
+}
+
+.sec-1-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.sec-1-card-container> :nth-child(1) {
+    grid-row: 1/3;
+}
+
+.sec-1-card-container>:nth-child(2),
+.sec-1-card-container>:nth-child(3) {
+    grid-column: 2/4;
+}
+
+.sec-1-card-container>:nth-child(4) {
+    grid-column: 1/3;
+}
+
+.sec-1-card {
+    border-radius: 10px;
+    background-color: #250D44;
+    padding: 20px;
+}
+
+/* section-3 */
+#section-3>h1 {
+    text-align: center;
+}
+
+.card-container {
+    margin: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    gap: 20px;
+    justify-content: center;
+}
+
+iframe {
+    width: 400px;
+    height: 200px;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #250D44;
+}
+
+.card-writting {
+    padding: 15px;
+}
+
+.card-writting :last-child {
+    color: lightgreen;
+}
+
+/* section-4 */
+#section-4 h1 {
+    text-align: center;
+}
+
+#section-4>div {
+    margin: 50px 100px;
+    background-color: #250D44;
+    padding: 30px;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 200px 3fr;
+    gap: 10px;
+}
+
+.host-social-link {
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+}
+
+.host-social-link a img {
+    border: 2px solid #533C72;
+    border-radius: 45%;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
 /* highlighted font */
 .highlighted-font {
     background: linear-gradient(to bottom, #9100F8 40%, #FB09B4 50%, yellow);
@@ -10,13 +112,13 @@
     -webkit-text-fill-color: transparent;
 }
 
+/* style of footer */
 footer {
     height: 400px;
     text-align: center;
     background-image: url(../assets/footer-bg.png);
     background-repeat: no-repeat;
     background-size: 100% 400px;
-    color: white;
     padding: 30px;
 }
 
@@ -39,6 +141,35 @@ footer div a {
 }
 
 @media screen and (max-width:576px) {
+    #section-2 {
+        margin: 20px;
+    }
+
+    .sec-1-card-container {
+        display: block;
+    }
+
+    .sec-1-card {
+        margin-bottom: 20px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 400px);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    #section-4>div {
+        margin: 50px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .host-social-link {
+        justify-content: center;
+    }
+
     footer {
         padding: 50px 30px 10px 30px;
     }
