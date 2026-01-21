@@ -2,3 +2,50 @@
 .cmn-font {
     font-family: "Inter", sans-serif;
 }
+
+/* highlighted font */
+.highlighted-font {
+    background: linear-gradient(to bottom, #9100F8 40%, #FB09B4 50%, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer {
+    height: 400px;
+    text-align: center;
+    background-image: url(../assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+    color: white;
+    padding: 30px;
+}
+
+footer>:nth-child(1) {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+footer div {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+    justify-content: center;
+}
+
+footer div a {
+    text-decoration: none;
+    color: white;
+
+}
+
+@media screen and (max-width:576px) {
+    footer {
+        padding: 50px 30px 10px 30px;
+    }
+
+    footer div {
+        grid-template-columns: repeat(2, auto);
+        gap: 5px;
+    }
+
+}
